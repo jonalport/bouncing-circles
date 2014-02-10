@@ -28,7 +28,6 @@ function canvasApp() {
   var colours = ['1FA2F4', '0569CE', 'F48C36', 'DE662C'];
   setCanvasSize();
   var NUM_CIRCLES = Math.round(canvas.height * canvas.width / 20000);
-  console.log(NUM_CIRCLES);
   createCircles();
   loop();
 
@@ -92,7 +91,6 @@ function canvasApp() {
 
   function loop() {   
     window.setTimeout(loop, 1000 / 60);
-    drawScreen();
     drawScreen();
   }
 }
